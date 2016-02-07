@@ -1,9 +1,13 @@
 {
-    "name": "paramoredigital/bronto-laravel",
-    "description": "A simple Laravel 4 service provider for using the Bronto PHP SDK.",
+    "name": "sextoy/bronto-laravel",
+    "description": "A simple Laravel 5 service provider for using the Bronto PHP SDK.",
 	"keywords": ["laravel","bronto","email"],
 	"type":"library",
     "authors": [
+        {
+            "name": "Ryan Abrams",
+            "email": "ryan@cnv.com"
+        },
         {
             "name": "Ben Wilkins",
             "email": "bwilkins@paramoredigital.com"
@@ -22,7 +26,7 @@
 	},
 	"autoload": {
         "psr-0": {
-            "ParamoreDigital\\BrontoLaravel": "src/"
+            "Sextoy\\BrontoLaravel": "src/"
         }
     },
     "minimum-stability": "dev",

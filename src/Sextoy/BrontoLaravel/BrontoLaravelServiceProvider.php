@@ -1,4 +1,4 @@
-<?php namespace ParamoreDigital\BrontoLaravel;
+<?php namespace Sextoy\BrontoLaravel;
 
 use Illuminate\Support\ServiceProvider;
 use Bronto_Api;
@@ -14,7 +14,7 @@ class BrontoLaravelServiceProvider extends ServiceProvider {
 	{
 		$this->app->bind('bronto', function($app)
 		{
-			$token = $app['config']->get('bronto::token');
+			$token = $app['config']->get('services.bronto.token');
 			$bronto = new Bronto_Api();
 
 			if (! is_null($token)) {
@@ -27,22 +27,12 @@ class BrontoLaravelServiceProvider extends ServiceProvider {
 	}
 
 	/**
-	 * Get the services provided by the provider.
-	 *
-	 * @return array
-	 */
-	public function provides()
-	{
-		return array('bronto');
-	}
-
-	/**
 	 * Bootstrap the application events.
 	 *
 	 * @return void
 	 */
 	public function boot()
 	{
-		$this->package('paramoredigital/bronto-laravel', 'bronto');
+		$this->loadViewsFrom(__DIR__.'sextoy/bronto-laravel', 'bronto');
 	}
 }
