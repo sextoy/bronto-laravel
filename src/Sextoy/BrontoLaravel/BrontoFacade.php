@@ -1,6 +1,10 @@
-<?php namespace Sextoy\BrontoLaravel;
+<?php
 
-class BrontoFacade extends Illuminate\Support\Facades\Facade {
+namespace Sextoy\BrontoLaravel;
+
+use Illuminate\Support\Facades\Facade;
+
+class BrontoFacade extends Facade {
 
 	protected static function getFacadeAccessor()
 	{
@@ -8,4 +12,4 @@ class BrontoFacade extends Illuminate\Support\Facades\Facade {
 	}
 }
 
-/* End of BrontoFacade.php */ 
+/* End of BrontoFacade.php */

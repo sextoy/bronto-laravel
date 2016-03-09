@@ -1,4 +1,6 @@
-<?php namespace Sextoy\BrontoLaravel;
+<?php
+
+namespace Sextoy\BrontoLaravel;
 
 use Illuminate\Support\ServiceProvider;
 use Bronto_Api;
